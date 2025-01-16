@@ -1,13 +1,13 @@
-<div class="container">
-  <h1>Users</h1>
-  <button (click)="addUser()">Add New User</button>
+<div class="container-wrapper">
+  <div class="container">
+    <h1>Organizers to follow</h1>
 
-  <div class="user-list">
-    <div class="user-card" *ngFor="let user of users">
-      <h3>{{ user.username }}</h3>
-      <p>Email: {{ user.email }}</p>
-      <p>Role: {{ user.role }}</p>
-      <button (click)="deleteUser(user.id)">Delete User</button>
+    <div class="user-list">
+      <div class="user-card" *ngFor="let user of users">
+        <img [src]="user.avatar" alt="Avatar" />
+        <h3>{{ user.username }}</h3>
+        <p *ngIf="user.eventCount">Events: {{ user.eventCount }}</p>
+      </div>
     </div>
   </div>
 </div>

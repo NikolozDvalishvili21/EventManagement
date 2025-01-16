@@ -23,20 +23,4 @@ export class UsersComponent implements OnInit {
     this.users = this.userService.getAllUsers();
   }
 
-  addUser(): void {
-    const newUser: User = {
-      id: 0,
-      username: 'newUser',
-      email: 'newuser@example.com',
-      password: 'password123',
-      role: 'user',
-    };
-    this.userService.addUser(newUser);
-    this.fetchUsers(); // Refresh the user list
-  }
-
-  deleteUser(id: number): void {
-    this.userService.deleteUser(id);
-    this.fetchUsers(); // Refresh the user list
-  }
 }

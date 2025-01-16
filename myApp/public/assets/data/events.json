@@ -13,7 +13,8 @@
       "price": 49.99,
       "description": "Massive warehouse rave with top international DJs, laser shows, and immersive sound environments across three stages.",
       "imageUrl": "https://fakeimg.pl/400x200/282828/eae0d0/?text=Rave",
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "userId": 2
     },
     {
       "id": 2,
@@ -28,7 +29,8 @@
       "price": 79.99,
       "description": "Ultimate Linkin Park tribute night featuring complete performances of 'Hybrid Theory' and 'Meteora' albums.",
       "imageUrl": "https://fakeimg.pl/400x200/0066ff/ffffff/?text=Linkin+Park",
-      "genre": "Rock"
+      "genre": "Rock",
+      "userId": 1
     },
     {
       "id": 3,
@@ -43,7 +45,8 @@
       "price": 129.99,
       "description": "Boston's biggest EDM festival with 20+ DJs, pyrotechnics, and next-gen sound systems across multiple stages.",
       "imageUrl": "https://fakeimg.pl/400x200/ff00ff/ffffff/?text=EDM",
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "userId": 4
     },
     {
       "id": 4,
@@ -58,7 +61,8 @@
       "price": 89.99,
       "description": "Journey through rock history with tributes to Led Zeppelin, Pink Floyd, and The Doors in one epic night.",
       "imageUrl": "https://fakeimg.pl/400x200/ff0000/ffffff/?text=Rock",
-      "genre": "Rock"
+      "genre": "Rock",
+      "userId": 5
     },
     {
       "id": 5,
@@ -73,7 +77,8 @@
       "price": 59.99,
       "description": "Intimate jazz night featuring local legends and special guest performers from New Orleans' finest venues.",
       "imageUrl": "https://fakeimg.pl/400x200/000066/ffffff/?text=Jazz",
-      "genre": "Jazz"
+      "genre": "Jazz",
+      "userId": 1
     },
     {
       "id": 6,
@@ -88,7 +93,8 @@
       "price": 0,
       "description": "Beachfront music festival with live bands, DJ sets, water sports, and food vendors along Miami's iconic shore.",
       "imageUrl": "https://fakeimg.pl/400x200/00ffff/000000/?text=Beach",
-      "genre": "Pop"
+      "genre": "Pop",
+      "userId": 3
     },
     {
       "id": 7,
@@ -103,7 +109,8 @@
       "price": 69.99,
       "description": "Raw underground hip-hop showcase featuring emerging artists, freestyle battles, and live beat-making sessions.",
       "imageUrl": "https://fakeimg.pl/400x200/000000/ffffff/?text=Hip+Hop",
-      "genre": "Hip-Hop"
+      "genre": "Hip-Hop",
+      "userId": 1
     },
     {
       "id": 8,
@@ -118,7 +125,8 @@
       "price": 0,
       "description": "Nostalgic night of 90s dance hits, retro decorations, and themed cocktails. Dress code: 90s fashion!",
       "imageUrl": "https://fakeimg.pl/400x200/ff3300/ffffff/?text=90s",
-      "genre": "Pop"
+      "genre": "Pop",
+      "userId": 1
     },
     {
       "id": 9,
@@ -133,7 +141,8 @@
       "price": 59.99,
       "description": "Hot Latin night featuring live salsa bands, professional dance shows, and salsa lessons for beginners.",
       "imageUrl": "https://fakeimg.pl/400x200/ff9900/ffffff/?text=Latin",
-      "genre": "Latin"
+      "genre": "Latin",
+      "userId": 3
     },
     {
       "id": 10,
@@ -148,7 +157,8 @@
       "price": 0,
       "description": "Free outdoor rock festival with live bands, food trucks, and craft beer vendors in Denver's scenic park.",
       "imageUrl": "https://fakeimg.pl/400x200/660033/ffffff/?text=Park",
-      "genre": "Rock"
+      "genre": "Rock",
+      "userId": 4
     },
     {
       "id": 11,
@@ -163,7 +173,8 @@
       "price": 0,
       "description": "Relaxed afternoon of acoustic performances by indie singer-songwriters. Perfect for coffee lovers.",
       "imageUrl": "https://fakeimg.pl/400x200/996600/ffffff/?text=Acoustic",
-      "genre": "Indie"
+      "genre": "Indie",
+      "userId": 1
     },
     {
       "id": 12,
@@ -178,7 +189,8 @@
       "price": 0,
       "description": "Celebrate global cultures with music, dance, and cuisines from around the world.",
       "imageUrl": "https://fakeimg.pl/400x200/663300/ffffff/?text=Cultural",
-      "genre": "World Music"
+      "genre": "World Music",
+      "userId": 5
     },
     {
       "id": 13,
@@ -193,7 +205,8 @@
       "price": 49.99,
       "description": "Chicago's most vibrant house party with top-notch DJs spinning bouncy beats all night.",
       "imageUrl": "https://fakeimg.pl/400x200/9900cc/ffffff/?text=House",
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "userId": 1
     },
     {
       "id": 14,
@@ -208,7 +221,8 @@
       "price": 0,
       "description": "Soul music showcase with local artists performing classic and modern soul hits in Atlanta's iconic park.",
       "imageUrl": "https://fakeimg.pl/400x200/ff6600/ffffff/?text=Soul",
-      "genre": "Soul"
+      "genre": "Soul",
+      "userId": 5
     },
     {
       "id": 15,
@@ -223,7 +237,8 @@
       "price": 99.99,
       "description": "High-energy EDM night with international DJs, immersive visuals, and stunning light shows.",
       "imageUrl": "https://fakeimg.pl/400x200/000099/ffffff/?text=Galaxy",
-      "genre": "Electronic"
+      "genre": "Electronic",
+      "userId": 1
     },
     {
       "id": 16,
@@ -237,7 +252,9 @@
       "attenders": 780,
       "price": 0,
       "description": "Open-air classical concert featuring Beethoven's 9th Symphony with full orchestra and choir.",
-      "imageUrl": "https://fakeimg.pl/400x200/000066/ffffff/?text=Symphony"
+      "imageUrl": "https://fakeimg.pl/400x200/000066/ffffff/?text=Symphony",
+      "genre": "Soul",
+      "userId": 1
     },
     {
       "id": 17,
@@ -251,7 +268,9 @@
       "attenders": 380,
       "price": 34.99,
       "description": "Intimate acoustic evening featuring local folk artists performing original songs and classic covers.",
-      "imageUrl": "https://fakeimg.pl/400x200/996633/ffffff/?text=Folk"
+      "imageUrl": "https://fakeimg.pl/400x200/996633/ffffff/?text=Folk",
+      "genre": "Jazz",
+      "userId": 4
     },
     {
       "id": 18,
@@ -265,7 +284,9 @@
       "attenders": 2700,
       "price": 0,
       "description": "12-hour house music experience with rotating international DJs and immersive light installations.",
-      "imageUrl": "https://fakeimg.pl/400x200/ff00ff/ffffff/?text=House"
+      "imageUrl": "https://fakeimg.pl/400x200/ff00ff/ffffff/?text=House",
+      "genre": "Electronic",
+      "userId": 5
     },
     {
       "id": 19,
@@ -279,7 +300,9 @@
       "attenders": 290,
       "price": 0,
       "description": "Exclusive blues night featuring vintage bourbon tasting and performances by Delta blues legends.",
-      "imageUrl": "https://fakeimg.pl/400x200/000099/ffffff/?text=Blues"
+      "imageUrl": "https://fakeimg.pl/400x200/000099/ffffff/?text=Blues",
+      "genre": "Jazz",
+      "userId": 1
     },
     {
       "id": 20,
@@ -293,7 +316,9 @@
       "attenders": 1250,
       "price": 0,
       "description": "Spectacular tribute show celebrating the greatest female pop icons from the 80s to today.",
-      "imageUrl": "https://fakeimg.pl/400x200/ff66cc/ffffff/?text=Pop"
+      "imageUrl": "https://fakeimg.pl/400x200/ff66cc/ffffff/?text=Pop",
+      "genre": "Pop",
+      "userId": 3
     }
   ]
 }
