@@ -2,74 +2,11 @@
   <section class="popular-music">
     <h2 class="popular-music__title">Popular in music</h2>
     <div class="popular-music__grid">
-      <div class="music-category">
+      <div class="music-category" *ngFor="let genre of genresWithImages.keys()">
         <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="DJ/Dance" />
+          <img [src]="genresWithImages.get(genre)" [alt]="genre" />
         </div>
-        <p class="music-category__name">DJ/Dance</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Rock" />
-        </div>
-        <p class="music-category__name">Rock</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Hip Hop/Rap" />
-        </div>
-        <p class="music-category__name">Hip Hop/Rap</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Latin" />
-        </div>
-        <p class="music-category__name">Latin</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Classical" />
-        </div>
-        <p class="music-category__name">Classical</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Jazz" />
-        </div>
-        <p class="music-category__name">Jazz</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Blues & Jazz" />
-        </div>
-        <p class="music-category__name">Blues & Jazz</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="R&B" />
-        </div>
-        <p class="music-category__name">R&B</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Pop" />
-        </div>
-        <p class="music-category__name">Pop</p>
-      </div>
-
-      <div class="music-category">
-        <div class="music-category__image">
-          <img src="https://fakeimg.pl/200x200" alt="Religious/Spiritual" />
-        </div>
-        <p class="music-category__name">Religious/Spiritual</p>
+        <p class="music-category__name">{{ genre }}</p>
       </div>
     </div>
   </section>
