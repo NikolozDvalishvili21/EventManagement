@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Users</h1>
+  <button (click)="addUser()">Add New User</button>
+
+  <div class="user-list">
+    <div class="user-card" *ngFor="let user of users">
+      <h3>{{ user.username }}</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Role: {{ user.role }}</p>
+      <button (click)="deleteUser(user.id)">Delete User</button>
+    </div>
+  </div>
+</div>
