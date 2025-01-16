@@ -1,0 +1,170 @@
+// Variables
+$primary-color: #d35400;
+$text-primary: #333;
+$text-secondary: #666;
+$success-color: #2ecc71;
+$card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+$container-width: 1200px;
+$grid-gap: 1.5rem;
+
+// Container
+.container {
+  max-width: $container-width;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+}
+
+// Title section
+.title {
+  color: $primary-color;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 3px;
+    background-color: $primary-color;
+    margin-top: 0.5rem;
+  }
+}
+
+// Grid layout
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $grid-gap;
+}
+
+// Event card
+.event-card {
+  background: white;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $card-shadow;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Image section
+.event-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Action buttons
+.action-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background: white;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: $text-secondary;
+  }
+}
+
+// Event details
+.event-details {
+  padding: 1rem;
+
+  .event-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: $text-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .event-info {
+    color: $text-secondary;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    
+    .host-name {
+      font-weight: 500;
+    }
+    
+    .followers {
+      color: $text-secondary;
+      font-size: 0.9rem;
+    }
+  }
+
+  .attendance {
+    color: $success-color;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+
+  .description {
+    color: $text-secondary;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+}
+
+.more-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: $text-secondary;
+  
+  &:hover {
+    color: $text-primary;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
