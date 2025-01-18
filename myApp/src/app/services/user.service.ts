@@ -391,6 +391,19 @@ export class UserService {
     },
   ];
 
+  constructor() {
+    const storedUsers = localStorage.getItem('users');
+
+    if (!storedUsers) {
+      localStorage.setItem('users', JSON.stringify(this.users));
+    } else {
+      const parsedUsers = JSON.parse(storedUsers);
+      if (!Array.isArray(parsedUsers) || parsedUsers.length === 0) {
+        localStorage.setItem('users', JSON.stringify(this.users));
+      }
+    }
+  }
+
   getAllUsers(): User[] {
     return this.users.map((user) => ({
       ...user,

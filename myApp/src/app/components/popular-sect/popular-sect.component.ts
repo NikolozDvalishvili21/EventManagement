@@ -21,7 +21,7 @@ interface Event {
   selector: 'app-popular-sect',
   imports: [CommonModule],
   templateUrl: './popular-sect.component.html',
-  styleUrls: ['./popular-sect.component.scss']
+  styleUrls: ['./popular-sect.component.scss'],
 })
 export class PopularSectComponent {
   genresWithImages: Map<string, string> = new Map();

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { EventsComponent } from "../../components/events/events.component";
+import { SignInblockComponent } from '../../components/sign-inblock/sign-inblock.component';
 
 @Component({
   selector: 'app-sign-in',
-  imports: [EventsComponent],
+  imports: [SignInblockComponent],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.scss'
 })
