@@ -4,19 +4,19 @@
       <img src="/assets/icons/Logo.png" alt="Evolution Logo" />
     </div>
 
-    <div class="header__search-container">
-      <input type="search" class="search-input" placeholder="Search all" />
-      <select class="location-select">
-        <option>Tbilisi</option>
-      </select>
-    </div>
-
     <nav class="header__nav">
       <a href="/events">Events</a>
       <a href="/stories">Stories</a>
       <a href="/our-mission">Our Mission</a>
       <a href="/contact-us">Contact us</a>
-      <a href="/my-profile">My Profile</a>
+      
+      <div class="header__profile">
+        <a href="#" class="header__profile-link" (click)="toggleDropdown($event)">My Profile</a>
+        <div class="header__profile-dropdown" [class.visible]="dropdownVisible">
+          <a href="/sign-in">Sign In</a>
+          <a href="/sign-up">Sign Up</a>
+        </div>
+      </div>
     </nav>
 
     <button class="header__create-btn">
@@ -35,7 +35,11 @@
 
   <div class="header__banner">
     <div class="header__banner-overlay"></div>
-    <img src="/assets/images/MainPic.png" alt="Music Studio" class="header__banner-image" />
+    <img
+      src="/assets/images/MainPic.png"
+      alt="Music Studio"
+      class="header__banner-image"
+    />
     <div class="header__banner-content">
       <h1>Music</h1>
       <p>in Pennsylvania</p>

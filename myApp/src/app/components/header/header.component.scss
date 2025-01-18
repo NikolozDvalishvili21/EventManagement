@@ -69,8 +69,54 @@
     }
   }
 
+  &__profile {
+    position: relative;
+
+    .header__profile-link {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: #ffa500;
+      }
+    }
+
+    .header__profile-dropdown {
+      position: absolute;
+      margin-top: 10px;
+      right: 0;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      display: none;
+      z-index: 1000;
+      width: 200px;
+
+      a {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        margin-bottom: 5px;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+
+    .header__profile-dropdown.visible {
+      display: block;
+    }
+  }
+
   &__create-btn {
-    background-color: #B1761F;
+    background-color: #b1761f;
     color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
