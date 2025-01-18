@@ -20,7 +20,7 @@
         </a>
         <div class="header__profile-dropdown" [class.visible]="dropdownVisible">
           <a [routerLink]="['/signIn']" *ngIf="!currentUser">Sign In</a>
-          <a href="/sign-up" *ngIf="!currentUser">Sign Up</a>
+          <a [routerLink]="['/signUp']" *ngIf="!currentUser">Sign Up</a>
           <a [routerLink]="['/']" (click)="signOut()" *ngIf="currentUser"
             >Sign Out</a
           >
