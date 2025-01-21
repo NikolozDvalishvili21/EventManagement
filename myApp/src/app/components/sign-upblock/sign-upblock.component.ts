@@ -45,7 +45,7 @@ export class SignUpblockComponent {
       username: this.username,
       email: this.email,
       password: this.password,
-      role: 'user', 
+      role: 'user',
       avatar: this.generateAvatarUrl(this.username),
     };
 
@@ -64,7 +64,9 @@ export class SignUpblockComponent {
 
   generateUserId(): number {
     const users: User[] = JSON.parse(localStorage.getItem('users') || '[]');
-    return users.length ? Math.max(...users.map((user: User) => user.id)) + 1 : 1;
+    return users.length
+      ? Math.max(...users.map((user: User) => user.id)) + 1
+      : 1;
   }
 
   generateAvatarUrl(username: string): string {
