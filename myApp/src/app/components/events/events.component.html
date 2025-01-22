@@ -1,18 +1,35 @@
 <div class="container">
   <h1 class="title">Most Popular Events</h1>
   <div class="events-grid">
-    <div class="event-card" *ngFor="let event of events">
+    <div
+      class="event-card"
+      *ngFor="let event of events"
+      [routerLink]="['/event']"
+      [queryParams]="{
+        title: event.title,
+        date: event.date,
+        time: event.time,
+        hostName: event.hostName,
+        price: event.price,
+        description: event.description,
+        address: event.address
+      }"
+    >
       <div class="event-image">
-        <img [src]="event.imageUrl" [alt]="event.title">
+        <img [src]="event.imageUrl" [alt]="event.title" />
         <div class="action-buttons">
           <button class="action-button">
             <svg viewBox="0 0 24 24">
-              <path d="M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.11 0-2-.9-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .89 2 2z"/>
+              <path
+                d="M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.11 0-2-.9-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .89 2 2z"
+              />
             </svg>
           </button>
           <button class="action-button">
             <svg viewBox="0 0 24 24">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
             </svg>
           </button>
         </div>
@@ -28,7 +45,9 @@
           <span class="host-name">{{ event.hostName }}</span>
           <span class="followers">{{ event.followers }} followers</span>
         </div>
-        <div class="attendance">{{ event.attendance }} people are attending this event.</div>
+        <div class="attendance">
+          {{ event.attendance }} people are attending this event.
+        </div>
         <p class="description">{{ event.description }}</p>
       </div>
     </div>

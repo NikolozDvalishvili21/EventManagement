@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 interface Event {
   id: number;
@@ -19,7 +20,7 @@ interface Event {
 @Component({
   selector: 'app-free-events',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './free-events.component.html',
   styleUrl: './free-events.component.scss',
 })

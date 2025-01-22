@@ -1,0 +1,78 @@
+.event-card {
+  width: 100%;
+
+  .inner-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  &-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  &-title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  &-artist {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .event-card-ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5FFFE;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  &-ticket {
+    text-align: right;
+    min-width: 120px;
+
+    &-price {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    &-button {
+      background-color: #2f6b5a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: darken(#2f6b5a, 5%);
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    &-ticket {
+      text-align: left;
+      margin-top: 20px;
+      width: 100%;
+
+      &-button {
+        width: 100%;
+      }
+    }
+  }
+}

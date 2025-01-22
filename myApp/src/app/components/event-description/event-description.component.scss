@@ -1,0 +1,42 @@
+.event-description {
+  width: 80%;
+  margin: 80px auto;
+
+  .inner-desc {
+    background: #F2F2F2;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  &-title {
+    color: #d97e39;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 24px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 32px;
+      height: 2px;
+      background: #d97e39;
+    }
+  }
+
+  &-subtitle {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  &-text {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}

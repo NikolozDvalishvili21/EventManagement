@@ -1,7 +1,20 @@
 <div class="container">
   <h1 class="title">Free</h1>
   <div class="events-grid">
-    <div class="event-card" *ngFor="let event of events">
+    <div
+      class="event-card"
+      *ngFor="let event of events"
+      [routerLink]="['/event']"
+      [queryParams]="{
+        title: event.title,
+        date: event.date,
+        time: event.time,
+        hostName: event.hostName,
+        price: event.price,
+        description: event.description,
+        address: event.address
+      }"
+    >
       <div class="event-image">
         <img [src]="event.imageUrl" [alt]="event.title" />
         <div class="action-buttons">
